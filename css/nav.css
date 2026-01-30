@@ -1,0 +1,10 @@
+header {
+    background-color: greenyellow;
+    font-size: 20px;
+    text-indent: 10;
+}
+
+.vk:hover {
+    transition: transform 0.3s ease-in;
+    transform: scale(1.1);
+}
