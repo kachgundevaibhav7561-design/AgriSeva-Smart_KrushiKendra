@@ -3,16 +3,17 @@ header {
     font-size: 20px;
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
 
 .vk:hover {
-
+    transform: scale(1.1);
     color: black;
     border-radius: 20px;
 
 }
-.sty1{
+
+.sty1 {
     font-size: 30px;
     text-align: center;
     padding-top: 20px;
@@ -21,7 +22,8 @@ header {
     border-radius: 30px;
 
 }
-.sty2:hover{
+
+.sty2:hover {
     transform: scale(1.1);
 
 }
