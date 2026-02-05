@@ -1,3 +1,75 @@
+/* Header background */
+header {
+  background-color: #008010ba; /* soft light green */
+  font-size: 18px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Brand text */
+.navbar-brand {
+  color: black; /* dark green */
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Nav links */
+.nav-link.vk {
+  color: black; /* natural green */
+  margin: 0 6px;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+/* Hover effect */
+.nav-link.vk:hover {
+  background-color: white; 
+  color: black;
+  transform: translateY(-2px);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #f1f8e9;
+}
+
+.dropdown-item {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #c5e1a5;
+  color: #1b5e20;
+}
+.sty1{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight:600 ;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.sty2{
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 15px;
+}
+
+.yjimg{
+  height: 250px;
+  width: 150px;
+}
+.sty{
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+.styl1:hover{
+  transform: scale(1.1) ;
+}
+/* Header section end */
 /* contact form section */
 .button_sty{
     width: 100%;
@@ -14,17 +86,26 @@
     background-color: green;
 }
 .f_border{
-    border-radius: 10px;
-    border: 2px solid black;
+    border-radius: 15px;
+    border-left: 5px solid #2e8b57;
+    border-right: 5px solid #2e8b57;
 }
 textarea{
     width: 100%;
     height: 90px;
     border-radius: 7px;
-    
+    transition: transform 0.4s ease;
 }
-.t_area{
-    
+textarea:hover{
+  transform: scale(1); 
+  border:2px solid #2e8b57 ;
+}
+input{
+  transition: transform 0.4s ease;
+}
+input:hover{
+  border:2px solid #2e8b57 ;
+  transform: scale(1);
 }
 
 /* banner img section*/
@@ -33,6 +114,12 @@ textarea{
   width: 100%;
   height: 400px;
   overflow: hidden;
+}
+.b_text{
+  transition: transform 0.6s ease;
+}
+.b_text:hover{
+  transform: scale(1.1);
 }
 
 .banner img {
@@ -59,6 +146,24 @@ textarea{
 .banner-text p {
   font-size: 17px;
 }
+.c_para{
+  padding: 30px;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #2f4f2f;
+  text-align: justify;
+  font-family: "Segoe UI", sans-serif;
+  border-left: 12px solid #2e8b57;
+  border-right: 12px solid #2e8b57;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.f_letter::first-letter{
+      font-size: 40px;
+    font-weight: 400;
+    color: #008010ba;
+}
 
 /* footer section start */
 .foot1 {
@@ -67,7 +172,7 @@ textarea{
 }
 
 .footer-section {
-  background: #c8f9a3;
+  background: #008010ba;
   position: relative;
 }
 
@@ -96,7 +201,7 @@ textarea{
 }
 
 .cta-text span {
-  color: #757575;
+  color: black;
   font-size: 15px;
 }
 
@@ -121,7 +226,7 @@ textarea{
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #7e7e7e;
+  color: black;
   line-height: 21px;
 }
 
@@ -175,7 +280,7 @@ textarea{
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: blue;
 }
 
 .footer-widget ul li {
@@ -186,11 +291,11 @@ textarea{
 }
 
 .footer-widget ul li a:hover {
-  color: #ff5e14;
+  color: blue;
 }
 
 .footer-widget ul li a {
-  color: #878787;
+  color: black;
   text-transform: capitalize;
 }
 
@@ -222,21 +327,21 @@ textarea{
   transform: rotate(-6deg);
 }
 
-.copyright-area {
+/* .copyright-area {
   background: #202020;
   padding: 25px 0;
-}
+} */
 
 /* .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 } */
-.year{
+/* .year{
   margin: 0;
   font-size: 14px;
   color: #878787;
-}
+} */
 .copyright-text p a {
   color: #ff5e14;
 }
