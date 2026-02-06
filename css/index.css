@@ -1,6 +1,10 @@
 /* Header section :start */
 /* Header background */
 header {
+  background-color: #008010ba; /* soft light green */
+  font-size: 18px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: green; /* soft light green */
   font-size: 18px;
   font-weight: 600;
@@ -86,6 +90,7 @@ header {
 
 
 .footer-section {
+  background: #008010ba;
   background: green;
   position: relative;
 }
@@ -242,6 +247,7 @@ header {
 }
 
 .copyright-area {
+  background: #45a251;
   background: green;
   padding: 25px 0;
 }
