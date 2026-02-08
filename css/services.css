@@ -1,9 +1,11 @@
+/* Header section :start */
+/* Header background */
 header {
   background-color: green; /* soft light green */
   font-size: 18px;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
   /* background-color:#008010ba ; */
@@ -74,112 +76,6 @@ header {
   transform: scale(1.1) ;
 }
 /* Header section end */
-/* contact form section */
-.button_sty{
-    width: 100%;
-    height: 43px;
-    text-align: center;
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-    transition: transform 0.4s ease;
-}
-.button_sty:hover{
-    transform: scale(0.9);
-    color: white;
-    background-color: green;
-}
-.f_border{
-    border-radius: 15px;
-    border-left: 5px solid #2e8b57;
-    border-right: 5px solid #2e8b57;
-}
-textarea{
-    width: 100%;
-    height: 90px;
-    border-radius: 7px;
-    transition: transform 0.4s ease;
-}
-textarea:hover{
-  transform: scale(1); 
-  border:2px solid #2e8b57 ;
-}
-input{
-  transition: transform 0.4s ease;
-}
-}
-textarea:hover{
-  transform: scale(1); 
-  border:2px solid #2e8b57 ;
-}
-input{
-  transition: transform 0.4s ease;
-}
-input:hover{
-  border:2px solid #2e8b57 ;
-  transform: scale(1);
-}
-
-/* banner img section*/
-.banner {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-.b_text{
-  transition: transform 0.6s ease;
-}
-.b_text:hover{
-  transform: scale(1.1);
-}
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 1; 
-}
-
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-}
-
-.banner-text h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.banner-text p {
-  font-size: 17px;
-}
-.c_para{
-  padding: 30px;
-  font-size: 22px;
-  line-height: 1.6;
-  color: #2f4f2f;
-  text-align: justify;
-  font-family: "Segoe UI", sans-serif;
-  border-left: 12px solid #2e8b57;
-  border-right: 12px solid #2e8b57;
-  border-radius: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.f_letter::first-letter{
-      font-size: 40px;
-    font-weight: 400;
-    color: #008010ba;
-}
-  font-size: 40px;
-  font-weight: 400;
-  color: #008010ba;
-}
 
 /* Footer section start */
 
@@ -499,16 +395,61 @@ input:hover{
 
 /* footer section end */
 
-/* whatsapp button */
-.whatsapp-button{
-  position: fixed;
-  right: 15px;
-  bottom: 155px;
-  z-index: 1000;
-  transition: transform 0.4s ease;
+/* banner img section */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
-.whatsapp-button:hover{
-  transform: scale(1.2);
+.b_text{
+  transition: transform 0.6s ease;
+}
+.b_text:hover{
+  transform: scale(1.1);
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1; 
 }
 
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
 
+.banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 17px;
+}
+
+/* service section */
+.serv_img{
+    border-radius: 20px;
+    margin-top: 60px;
+}
+.t_agri{
+    font-size: 19px;
+    line-height: 1.6;
+    font-family: sans-serif;
+}
+.c_agri{
+    font-size: 17px;
+    list-style: none;
+    line-height: 2.1;
+    font-family: sans-serif;
+}
+.w_img{
+    border-radius: 15px;
+}
