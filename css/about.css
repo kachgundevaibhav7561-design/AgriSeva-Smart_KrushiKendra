@@ -1,39 +1,58 @@
 
  /* about us  */
 .animation {
-    height: 500px;
-    border-radius: 10px;
-    background-image: url("/images/mix\ crop.png");
-    border: 2px solid greenyellow;
+    height: 550px;
+    width: 100%;
+    border-radius: 12px;
+    background-image: url("/images/agriculture-6155388_1280.jpg");
+    border: 2px solid black;
     animation: movingbox;
     position: relative;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 @keyframes movingbox {
-    0% {
-        background-image: url("/images/logo2.png");
+    10% {
+        background-image: url("/images/download\ \(1\).jpeg");
        
     }
 
-    25% {
-        background-image: url("/images/gheu.jpg");
+    20% {
+        background-image: url("/images/cotton.jpg");
     }
 
-    50% {
+    30% {
         background-image: url("/images/Gram.jpeg");
     }
 
-    75% {
+    40% {
         background-image: url("/images/turmeric.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    100% {
+    50% {
         background-image: url("/images/soy-941737_1280.jpg");
+    }
+    60%{
+        background-image: url("/images/webtechexperts-sugarcane-5388614_1280.jpg");
+    }
+    70%{
+        background-image: url("/images/wheat3.jpeg");
+    }
+    80%{
+        background-image: url("/images/sugarcane1.jpg");
+
+    }
+    90%{
+        background-image: url("/images/1332105-turmeric.jpg");
+    }
+    100%{
+        background-image: url("/images/green\ soy.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
