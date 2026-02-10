@@ -16,6 +16,7 @@
 @keyframes movingbox {
     10% {
         background-image: url("/images/download\ \(1\).jpeg");
+        transition: transform 0.2s ease-out;
        
     }
 
@@ -41,6 +42,8 @@
     }
     70%{
         background-image: url("/images/wheat3.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     80%{
         background-image: url("/images/sugarcane1.jpg");
