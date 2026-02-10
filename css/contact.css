@@ -1,12 +1,11 @@
 header {
-  background-color: green; /* soft light green */
+  background-color:  rgb(74, 195, 74);
   font-size: 18px;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
-  /* background-color:#008010ba ; */
 
 }
 
@@ -183,7 +182,7 @@ input:hover{
 
 
 .footer-section {
-  background: green;
+  background:  rgb(74, 195, 74);
   position: relative;
 }
 
@@ -339,7 +338,7 @@ input:hover{
 }
 
 .copyright-area {
-  background: green;
+  background:  rgb(74, 195, 74);
   padding: 25px 0;
 }
 
