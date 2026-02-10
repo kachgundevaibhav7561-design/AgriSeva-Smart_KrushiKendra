@@ -67,7 +67,7 @@
         <img src="images/farmer.webp" alt="" class="img-fluid">
         <div class="banner-text">
           <h1 class="b_text">Contact Us</h1>
-          <p>Your trusted solution for quality services</p>
+          <p id="text" onmouseenter="changeText()">Your Farming Questions, Our Priority</p>
         </div>
       </div>
       <div class="col-md-12 c_para">
@@ -243,6 +243,11 @@
     </div>
   </footer>
   <!-- footer section End -->
+   <script>
+      function changeText() {
+        document.getElementById("text").innerHTML = "Let's Grow Together - Contact Us";
+      }
+    </script>
   <script>
     document.getElementById("contactForm").addEventListener("submit", function (e) {
       e.preventDefault();
