@@ -1,18 +1,16 @@
 /* Header section :start */
 /* Header background */
 header {
-  background-color: #008010ba; /* soft light green */
+  background-color:  rgb(74, 195, 74); /* soft light green */
   font-size: 18px;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: green; /* soft light green */
   font-size: 18px;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
-  /* background-color:#008010ba ; */
 
 }
 
@@ -101,8 +99,7 @@ header {
 
 
 .footer-section {
-  background: #008010ba;
-  background: green;
+  background:  rgb(74, 195, 74);
   position: relative;
 }
 
@@ -258,8 +255,7 @@ header {
 }
 
 .copyright-area {
-  background: #45a251;
-  background: green;
+  background:  rgb(74, 195, 74);
   padding: 25px 0;
 }
 
