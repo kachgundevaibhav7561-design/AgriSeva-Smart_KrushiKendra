@@ -505,3 +505,27 @@ input:hover{
 }
 
 
+.stats-section {
+  background-image: url(/images/service_img.webp);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.stat-box {
+  padding: 20px;
+}
+
+.stat-box h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #74e28e;
+}
+
+.stat-box p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+
