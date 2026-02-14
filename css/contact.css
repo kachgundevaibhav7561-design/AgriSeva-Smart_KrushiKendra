@@ -506,7 +506,7 @@ input:hover{
 
 
 .stats-section {
-  background-image: url(/images/service_img.webp);
+  background-image: url(/images/banner_farm.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -520,6 +520,7 @@ input:hover{
   font-size: 40px;
   font-weight: bold;
   color: #74e28e;
+  margin-top: 15px;
 }
 
 .stat-box p {
