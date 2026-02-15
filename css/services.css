@@ -441,6 +441,7 @@ header {
 .banner-text h1 {
   font-size: 48px;
   margin-bottom: 10px;
+  color: #74e28e;
 }
 
 .banner-text p {
@@ -467,7 +468,7 @@ header {
     border-radius: 15px;
 }
 .c1_color{
-  background-color:rgb(208, 241, 208);
+  background-color:rgb(192, 245, 192);
   border-radius: 20px;
   padding: 50%;
   
@@ -574,6 +575,9 @@ header {
   margin-bottom: 60px;
   margin-top: 60px;
 }
+
+
+
 
 
 

@@ -143,12 +143,13 @@ input:hover{
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color:white ;
 }
 
 .banner-text h1 {
   font-size: 48px;
   margin-bottom: 10px;
+  color: #74e28e;
 }
 
 .banner-text p {
@@ -503,5 +504,30 @@ input:hover{
 .whatsapp-button:hover{
   transform: scale(1.2);
 }
+
+
+.stats-section {
+  background-image: url(/images/banner_farm.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.stat-box {
+  padding: 20px;
+}
+
+.stat-box h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #74e28e;
+  margin-top: 15px;
+}
+
+.stat-box p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 
 
