@@ -1,17 +1,31 @@
 /* about us  */
 .animation {
-    height: 550px;
     width: 100%;
+    height: 85vh;
+    min-height: 280px;
+    max-height: 520px;
     border-radius: 12px;
-    background-image: url("/images/sugarcane1.jpg");
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    border: 2px solid black;
-    animation: movingbox;
+    background-repeat: no-repeat;
+    border: 3px solid #e8f5e9;
+    animation: movingbox 15s infinite ease-in-out;
     position: relative;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-delay: 3s;
+    overflow: hidden;
+    background-image: url("/images/sugarcane1.jpg");
+}
+
+.img {
+    background: linear-gradient(135deg, #1b5e20, #4caf50);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.animation::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 @keyframes movingbox {
@@ -30,9 +44,10 @@
     }
 
     40% {
-        background-image: url("/images/turmeric.jpeg");
+        background-image: url("/images/wheat3.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
+
     }
 
     50% {
@@ -44,7 +59,9 @@
     }
 
     70% {
-        background-image: url("/images/wheat3.jpeg");
+
+
+        background-image: url("/images/turmeric.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -112,7 +129,8 @@
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-.stylee1{
+
+.stylee1 {
     text-align: center;
     margin-top: 30px;
     margin-left: 10px;
@@ -122,21 +140,64 @@
     background-color: #53cc53;
     border-radius: 10px;
 }
-.imgg{
+
+.imgg {
     width: 400px;
     margin-top: 10px;
     border-radius: 15px;
+}
+
+.imgg:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
 
 }
-.t_section{
-    text-decoration: underline  white;
-    
+
+.t_section {
+    text-decoration: underline white;
+
 }
-.t_section::first-letter{
+
+.t_section::first-letter {
     font-size: 50px;
     color: greenyellow;
     font-family: sans-serif;
 }
-.section11{
+
+.section11 {
     border: 2px solid black;
+}
+
+.paragraph1 {
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    transition: all 0.4s ease;
+
+
+}
+
+.paragraph1:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.paragraph1 {
+    position: relative;
+}
+
+.paragraph1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: radial-gradient(green, yellow, red, blue);
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s ease;
+}
+
+.paragraph1:hover::after {
+    width: 100%;
 }
