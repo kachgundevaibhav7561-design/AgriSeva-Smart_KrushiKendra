@@ -1,415 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AgriSeva | Crops</title>
-
-<link rel="stylesheet" href="crops.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agri-Seva | Crops, Fertilizers & Seeds</title>
+  <link rel="stylesheet" href="css/crops.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- Header section start -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/flogo.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
-                    Agri-Seva
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link  vk" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link vk" href="about_Us.html">About Us</a>
-                        </li>
-                        <li class="nav-item vk">
-                        <li class="nav-item ">
-                            <a class="nav-link vk" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle vk" href="crops.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Crops
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="crops.html">Crops</a></li>
-                                <li><a class="dropdown-item " href="seeds.html">Seeds</a></li>
-                                <li><a class="dropdown-item " href="fertilizers.html">Fertilizer</a></li>
-                            </ul>
-
-                        <li class="nav-item">
-                            <a class="nav-link vk " href="contact_us.html">Contact</a>
-                        </li>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-    <!-- Header section end -->
-
-<section class="hero">
-
-<h1>Crop Information Center</h1>
-
-<p>Select Crop, Seed and Fertilizer to know complete farming details.</p>
-
-</section>
-
-<section class="selection">
-
-<div class="dropdown">
-
-<label>Select Crop</label>
-
-<select id="cropSelect">
-
-<option>Select Crop</option>
-
-<option>Rice</option>
-
-<option>Wheat</option>
-
-<option>Maize</option>
-
-<option>Cotton</option>
-
-<option>Sugarcane</option>
-
-<option>Soybean</option>
-
-<option>Groundnut</option>
-
-<option>Tomato</option>
-
-<option>Potato</option>
-
-<option>Onion</option>
-
-</select>
-
-</div>
-
-<div class="dropdown">
-
-<label>Seed</label>
-
-<select id="seedSelect">
-
-<option>Select Seed</option>
-
-</select>
-
-</div>
-
-<div class="dropdown">
-
-<label>Fertilizer</label>
-
-<select id="fertilizerSelect">
-
-<option>Select Fertilizer</option>
-
-</select>
-
-</div>
-
-</section>
-
-<section class="crop-container">
-
-<div class="image-box">
-
-<img
-id="cropImage"
-src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=900"
->
-
-</div>
-
-<div class="details">
-
-<h2 id="cropName">
-
-Choose Crop
-
-</h2>
-
-<table>
-
-<tr>
-
-<td><b>Season</b></td>
-
-<td id="season">-</td>
-
-</tr>
-
-<tr>
-
-<td><b>Soil</b></td>
-
-<td id="soil">-</td>
-
-</tr>
-
-<tr>
-
-<td><b>Water</b></td>
-
-<td id="water">-</td>
-
-</tr>
-
-<tr>
-
-<td><b>Harvest</b></td>
-
-<td id="harvest">-</td>
-
-</tr>
-
-<tr>
-
-<td><b>Yield</b></td>
-
-<td id="yield">-</td>
-
-</tr>
-
-</table>
-
-<div class="tips">
-
-<h3>Farming Tips</h3>
-
-<p id="tips">
-
-Select a crop to view recommendations.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Popular Crops -->
-
-<section class="popular">
-
-<h2>Popular Crops</h2>
-
-<div class="cards">
-
-<div class="card">
-<i class="fas fa-seedling"></i>
-<h3>Rice</h3>
-<p>India's major Kharif crop.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-wheat-awn"></i>
-<h3>Wheat</h3>
-<p>Main Rabi season crop.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-leaf"></i>
-<h3>Cotton</h3>
-<p>Cash crop with high demand.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-tree"></i>
-<h3>Sugarcane</h3>
-<p>Important commercial crop.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- Statistics -->
-
-<section class="stats">
-
-<div class="stat-box">
-
-<h2>10+</h2>
-
-<p>Crops</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2>20+</h2>
-
-<p>Seeds</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2>15+</h2>
-
-<p>Fertilizers</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2>100%</h2>
-
-<p>Farmer Support</p>
-
-</div>
-
-</section>
-
-<!-- footer section start -->
-
-    <footer class="footer-section">
-        <div class="container ">
-            <div class="footer-cta pt-5 ">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Address📍</h4>
-                                <span>7th Floor, Office No - 704 to 707, Bramha Sky Uzuri, PCMC Building,
-                                    Pimpri, Pune - 411018. </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call Us 📞</h4>
-                                <span>+91 7498452088</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us 📩</h4>
-                                <span>agrisupport07@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content pt-5 pb-1">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="images/flogo.png" class="img-fluid" alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p> 🌾Smart Krushi Kendra empowers farmers with trusted agricultural knowledge, modern
-                                    farming guidance, and digital support to grow healthier crops and build a
-                                    sustainable agricultural future.🌱
-                                </p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span class="text-dark">Follow us</span>
-                                <ul class="social_icon">
-                                    <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i> </a></li>
-                                    <li><a href="https://x.com/"><i class="bi bi-twitter-x"></i></a></li>
-                                    <li><a href="https://www.instagram.com/accounts/login/"><i
-                                                class="bi bi-instagram"></i></i></a></li>
-                                    <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></i></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about_Us.html">About Us</a></li>
-                                <li><a href="crops.html">Crops</a></li>
-                                <li><a href="seeds.html"></a></li>
-                                <li><a href="fertilizers.html">Fertilizer</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p> To receive the latest agricultural updates, crop guidance, and information about
-                                    fertilizers and pesticides directly in your email, please enter your email address
-                                    below.Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button onclick="submitted()" id="submit">submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text text-center">
-                            <p> &copy; 2026 <b>Agri-Seva smart Krushi kendra 🌾</b> | All Right Reserved..</p>
-                            <!-- <a href="#">Soumitra Ghosh</a></p> -->
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer section End -->
-
-<script src="crops.js"></script>
-<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-
+<header class="agri-header">
+  <nav class="navbar navbar-expand-lg agri-navbar">
+    <div class="container">
+      <a class="navbar-brand agri-brand" href="index.html"><img src="images/agri-logo.svg" alt="AgriSeva logo"><span>Agri-Seva</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#agriMainNav" aria-controls="agriMainNav" aria-expanded="false" aria-label="Open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="agriMainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center agri-nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_Us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="crops.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+            <ul class="dropdown-menu agri-dropdown shadow border-0">
+              <li><a class="dropdown-item" href="crops.html"><span>🌾</span> Crops</a></li>
+              <li><a class="dropdown-item" href="fertilizers.html"><span>🧪</span> Fertilizers</a></li>
+              <li><a class="dropdown-item" href="seeds.html"><span>🌱</span> Seeds</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="eyebrow"><i class="bi bi-flower1"></i> SMART KRUSHI KENDRA</span>
+      <h1>Everything Your Farm Needs,<br><span>In One Place.</span></h1>
+      <p>Explore crops, choose suitable fertilizers, and learn about quality seeds with simple information for better farming decisions.</p>
+      <div class="hero-actions">
+        <a href="#explore" class="btn btn-success btn-lg">Explore Now <i class="bi bi-arrow-down"></i></a>
+        <a href="#tips" class="btn btn-light btn-lg">Farmer Tips</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="explore" class="container explorer-card">
+    <div class="explorer-copy">
+      <span class="section-kicker">QUICK EXPLORER</span>
+      <h2>Choose what you want to learn about</h2>
+      <p>Select a category and we will take you directly to the information section.</p>
+    </div>
+    <div class="category-select-wrap">
+      <label for="categorySelect">Browse Category</label>
+      <select id="categorySelect" class="form-select form-select-lg">
+        <option value="crops">🌾 Crops</option>
+        <option value="fertilizers">🧪 Fertilizers</option>
+        <option value="seeds">🌱 Seeds</option>
+      </select>
+    </div>
+  </section>
+
+  <section id="crops" class="content-section container">
+    <div class="section-heading">
+      <div><span class="section-kicker">CROP GUIDE</span><h2>Popular Crops</h2><p>Understand season, soil preference and basic cultivation information.</p></div>
+      <span class="count-badge">6 Crops</span>
+    </div>
+    <div class="info-grid">
+      <article class="info-card"><img src="images/rice.jpg" alt="Rice crop"><div class="card-body"><span class="tag">Kharif</span><h3>Rice</h3><p>A major staple crop that grows well in warm, humid conditions with adequate water.</p><ul><li><b>Season:</b> Kharif</li><li><b>Soil:</b> Clay & loam</li></ul></div></article>
+      <article class="info-card"><img src="images/wheAT.jpg" alt="Wheat crop"><div class="card-body"><span class="tag gold">Rabi</span><h3>Wheat</h3><p>An important cereal crop suited to cool growing conditions and well-drained fertile soil.</p><ul><li><b>Season:</b> Rabi</li><li><b>Soil:</b> Loamy</li></ul></div></article>
+      <article class="info-card"><img src="images/cotton.jpg" alt="Cotton crop"><div class="card-body"><span class="tag">Cash Crop</span><h3>Cotton</h3><p>A valuable fibre crop requiring warm weather, sunlight and careful pest management.</p><ul><li><b>Season:</b> Kharif</li><li><b>Soil:</b> Black soil</li></ul></div></article>
+      <article class="info-card"><img src="images/sugarcane.webp" alt="Sugarcane crop"><div class="card-body"><span class="tag purple">Commercial</span><h3>Sugarcane</h3><p>A long-duration commercial crop used mainly for sugar and other valuable products.</p><ul><li><b>Duration:</b> 10–18 months</li><li><b>Water:</b> Regular irrigation</li></ul></div></article>
+      <article class="info-card"><img src="images/soya.avif" alt="Soybean crop"><div class="card-body"><span class="tag green">Oilseed</span><h3>Soybean</h3><p>A protein-rich oilseed crop that also supports soil health through nitrogen fixation.</p><ul><li><b>Season:</b> Kharif</li><li><b>Soil:</b> Well-drained</li></ul></div></article>
+      <article class="info-card"><img src="images/tur crop.jpg" alt="Tur crop"><div class="card-body"><span class="tag orange">Pulse</span><h3>Tur / Pigeon Pea</h3><p>An important pulse crop valued for its nutrition and ability to fit many farming systems.</p><ul><li><b>Season:</b> Kharif</li><li><b>Benefit:</b> Nitrogen fixation</li></ul></div></article>
+    </div>
+  </section>
+
+  <section id="fertilizers" class="content-section section-tint">
+    <div class="container">
+      <div class="section-heading"><div><span class="section-kicker">PLANT NUTRITION</span><h2>Fertilizers & Their Uses</h2><p>Learn the primary purpose of common fertilizers. Always follow soil-test and local agricultural recommendations.</p></div><span class="count-badge">5 Types</span></div>
+      <div class="info-grid fertilizer-grid">
+        <article class="info-card"><img src="images/urea.jpg" alt="Urea fertilizer"><div class="card-body"><span class="tag blue">Nitrogen</span><h3>Urea</h3><p>Common nitrogen fertilizer that supports healthy leafy and vegetative growth.</p><div class="mini-note"><i class="bi bi-info-circle"></i> Apply according to crop requirement.</div></div></article>
+        <article class="info-card"><img src="images/DAP.jpeg" alt="DAP fertilizer"><div class="card-body"><span class="tag orange">N + P</span><h3>DAP</h3><p>Diammonium phosphate supplies nitrogen and phosphorus for early root and plant development.</p><div class="mini-note"><i class="bi bi-info-circle"></i> Useful during balanced nutrient planning.</div></div></article>
+        <article class="info-card fertilizer-visual"><div class="fertilizer-art mop">MOP</div><div class="card-body"><span class="tag purple">Potassium</span><h3>MOP</h3><p>Muriate of potash supplies potassium, an important nutrient for overall plant strength.</p><div class="mini-note"><i class="bi bi-info-circle"></i> Check crop sensitivity before use.</div></div></article>
+        <article class="info-card fertilizer-visual"><div class="fertilizer-art npk">NPK<br><small>19:19:19</small></div><div class="card-body"><span class="tag green">Balanced</span><h3>NPK 19:19:19</h3><p>A balanced fertilizer formulation providing equal proportions of three primary nutrients.</p><div class="mini-note"><i class="bi bi-info-circle"></i> Match dosage to crop stage.</div></div></article>
+        <article class="info-card fertilizer-visual"><div class="fertilizer-art organic">🌿<br><small>ORGANIC</small></div><div class="card-body"><span class="tag brown">Soil Health</span><h3>Organic Manure</h3><p>Organic inputs can improve soil organic matter and support long-term soil structure.</p><div class="mini-note"><i class="bi bi-info-circle"></i> Use well-decomposed material.</div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="seeds" class="content-section container">
+    <div class="section-heading"><div><span class="section-kicker">START STRONG</span><h2>Quality Seeds</h2><p>Good-quality seed is the first step toward a healthy and productive crop.</p></div><span class="count-badge">5 Seed Groups</span></div>
+    <div class="info-grid seed-grid">
+      <article class="info-card"><img src="images/paddy.jpg" alt="Paddy seeds"><div class="card-body"><span class="tag green">Cereal</span><h3>Paddy Seeds</h3><p>Choose varieties suitable for your local rainfall, season and field conditions.</p></div></article>
+      <article class="info-card"><img src="images/wheat2.jpeg" alt="Wheat seeds"><div class="card-body"><span class="tag gold">Cereal</span><h3>Wheat Seeds</h3><p>Healthy, clean seed and recommended varieties support uniform crop establishment.</p></div></article>
+      <article class="info-card"><img src="images/seed2 soya.jpeg" alt="Soybean seeds"><div class="card-body"><span class="tag green">Oilseed</span><h3>Soybean Seeds</h3><p>Select region-appropriate varieties with good germination and seed health.</p></div></article>
+      <article class="info-card"><img src="images/Gram.jpeg" alt="Gram seeds"><div class="card-body"><span class="tag orange">Pulse</span><h3>Gram / Chickpea Seeds</h3><p>Quality pulse seed helps establish a strong crop in suitable Rabi conditions.</p></div></article>
+      <article class="info-card"><img src="images/green soy.jpeg" alt="Green gram seeds"><div class="card-body"><span class="tag lime">Pulse</span><h3>Green Gram Seeds</h3><p>A popular short-duration pulse option for suitable seasonal farming systems.</p></div></article>
+    </div>
+  </section>
+
+  <section id="tips" class="container farmer-tip">
+    <div class="tip-icon"><i class="bi bi-lightbulb-fill"></i></div>
+    <div><span class="section-kicker">TIP FOR FARMERS</span><h2>Better decisions begin with the right information.</h2><p>Choose crops suited to your climate and soil, use quality seeds, and apply fertilizers based on crop needs and soil-test recommendations.</p></div>
+  </section>
+</main>
+
+<footer class="agri-footer">
+  <div class="container agri-footer-grid">
+    <div class="footer-about">
+      <a class="footer-logo" href="index.html"><img src="images/agri-logo.svg" alt="AgriSeva logo"><span>Agri-Seva</span></a>
+      <p>Agri-Seva Smart Krushi Kendra helps farmers explore crops, fertilizers, seeds, modern farming information and useful agricultural services.</p>
+      <div class="social-links" aria-label="Social media links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a><a href="about_Us.html">About Us</a><a href="services.html">Services</a><a href="contact_us.html">Contact Us</a>
+    </div>
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <a href="crops.html">🌾 Crops</a><a href="fertilizers.html">🧪 Fertilizers</a><a href="seeds.html">🌱 Seeds</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <p><i class="bi bi-geo-alt-fill"></i> Pimpri, Pune - 411018</p>
+      <p><i class="bi bi-telephone-fill"></i> +91 9322264354</p>
+      <p><i class="bi bi-envelope-fill"></i> agrisupport07@gmail.com</p>
+    </div>
+  </div>
+  <div class="agri-footer-bottom"><div class="container">© 2026 <strong>Agri-Seva Smart Krushi Kendra</strong>. All Rights Reserved. <span>Growing together with better farming.</span></div></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('categorySelect').addEventListener('change', function () {
+    const target = document.getElementById(this.value);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>
+<script>document.addEventListener('DOMContentLoaded',function(){const page=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.agri-navbar .nav-link').forEach(a=>{const href=a.getAttribute('href');if(href===page||(href==='crops.html'&&['crops.html','fertilizers.html','seeds.html'].includes(page)))a.classList.add('active');});});</script>
+<script src="js/site-enhancements.js"></script>
 </body>
-
 </html>

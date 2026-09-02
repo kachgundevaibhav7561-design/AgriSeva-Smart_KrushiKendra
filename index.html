@@ -14,116 +14,94 @@
 
 <body>
     <!-- Header section start -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/flogo.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
-                    Agri-Seva
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link  vk" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link vk" href="about_Us.html">About Us</a>
-                        </li>
-                        <li class="nav-item vk">
-                        <li class="nav-item ">
-                            <a class="nav-link vk" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle vk" href="crops.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Crops
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="crops.html">Crops</a></li>
-                                <li><a class="dropdown-item " href="seeds.html">Seeds</a></li>
-                                <li><a class="dropdown-item " href="fertilizers.html">Fertilizer</a></li>
-                            </ul>
-
-                        <li class="nav-item">
-                            <a class="nav-link vk " href="contact_us.html">Contact</a>
-                        </li>
-                </div>
-            </div>
-        </nav>
-
-    </header>
+    <header class="agri-header">
+  <nav class="navbar navbar-expand-lg agri-navbar">
+    <div class="container">
+      <a class="navbar-brand agri-brand" href="index.html"><img src="images/agri-logo.svg" alt="AgriSeva logo"><span>Agri-Seva</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#agriMainNav" aria-controls="agriMainNav" aria-expanded="false" aria-label="Open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="agriMainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center agri-nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_Us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="crops.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+            <ul class="dropdown-menu agri-dropdown shadow border-0">
+              <li><a class="dropdown-item" href="crops.html"><span>🌾</span> Crops</a></li>
+              <li><a class="dropdown-item" href="fertilizers.html"><span>🧪</span> Fertilizers</a></li>
+              <li><a class="dropdown-item" href="seeds.html"><span>🌱</span> Seeds</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
     <!-- Header section end -->
 
     <!-- Main section start -->
     <main>
-        <!-- slider section start -->
-        <section>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="1500">
-                        <img src="images/Download Calming ready to harvest cotton landscapes for web use for free.jpeg"
-                            class="d-block w-100" alt="soyabean" height="450px" width="1700px">
-                        <div class="carousel-caption  d-md-block style1">
-                            <h5>Cotton Cultivation 🌱</h5>
-                            <p>Smart practices for healthy cotton growth 🌱</p>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="1500">
-                        <img src="images/pest1.webp" class="d-block w-100 " alt="pestsides" height="450px"
-                            width="1700px">
-                        <div class="carousel-caption  d-md-block style1">
-                            <h5>Pesticides 💊</h5>
-                            <p>Protect crops from pests and diseases safely 🌱</p>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="1500">
-                        <img src="images/slider1.png" class="d-block w-100" alt="cotton" height="450px" width="1700px">
-                        <div class="carousel-caption d-md-block style1">
-
-                            <h5> Soybean🌾</h5>
-                            <p>Complete care for quality soybean production.🌾</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="1500">
-                        <img src="images/wheAT.jpg" class="d-block w-100" alt="cotton" height="450px" width="1700px">
-                        <div class="carousel-caption  d-md-block style1">
-                            <h5>Wheat Crop🌾</h5>
-                            <p>Essential farming practices to ensure healthy wheat growth and quality production 🌾</p>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <!-- Professional hero slider start -->
+        <section class="home-hero" aria-label="Agriculture highlights">
+          <div id="agriHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5200">
+            <div class="carousel-indicators hero-indicators">
+              <button type="button" data-bs-target="#agriHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#agriHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#agriHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#agriHeroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/tractor.webp" alt="Tractor working in a green agricultural field">
+                <div class="hero-overlay"></div>
+                <div class="container hero-caption-wrap"><div class="hero-caption">
+                  <span class="hero-kicker">SMART AGRICULTURE • TRUSTED GUIDANCE</span>
+                  <h1>Empowering Farmers,<br><strong>Growing Better Tomorrow</strong></h1>
+                  <p>Explore practical crop knowledge, quality inputs and useful agricultural guidance designed for modern farming.</p>
+                  <div class="hero-actions"><a href="services.html" class="hero-btn primary">Explore Services <i class="bi bi-arrow-right"></i></a><a href="crops.html" class="hero-btn outline">Explore Crops</a></div>
+                </div></div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/green-1117267_1280.jpg" alt="Healthy green crop field">
+                <div class="hero-overlay"></div>
+                <div class="container hero-caption-wrap"><div class="hero-caption">
+                  <span class="hero-kicker">CROP INFORMATION</span>
+                  <h1>Healthy Crops Start With<br><strong>Better Decisions</strong></h1>
+                  <p>Discover crop-wise cultivation practices, soil guidance and seasonal information in one place.</p>
+                  <a href="crops.html" class="hero-btn primary">View Crops <i class="bi bi-arrow-right"></i></a>
+                </div></div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/urea.jpg" alt="Agricultural fertilizer">
+                <div class="hero-overlay"></div>
+                <div class="container hero-caption-wrap"><div class="hero-caption">
+                  <span class="hero-kicker">QUALITY AGRICULTURAL INPUTS</span>
+                  <h1>Feed Your Soil,<br><strong>Support Every Harvest</strong></h1>
+                  <p>Learn about fertilizers and their role in balanced crop nutrition and healthy growth.</p>
+                  <a href="fertilizers.html" class="hero-btn primary">Explore Fertilizers <i class="bi bi-arrow-right"></i></a>
+                </div></div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/seed2 soya.jpeg" alt="Quality seeds for farming">
+                <div class="hero-overlay"></div>
+                <div class="container hero-caption-wrap"><div class="hero-caption">
+                  <span class="hero-kicker">QUALITY SEEDS</span>
+                  <h1>Start Strong With<br><strong>Quality Seeds</strong></h1>
+                  <p>Explore seed information to help farmers choose suitable options for productive farming.</p>
+                  <a href="seeds.html" class="hero-btn primary">Explore Seeds <i class="bi bi-arrow-right"></i></a>
+                </div></div>
+              </div>
+            </div>
+            <button class="carousel-control-prev hero-control" type="button" data-bs-target="#agriHeroCarousel" data-bs-slide="prev"><span class="bi bi-chevron-left" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+            <button class="carousel-control-next hero-control" type="button" data-bs-target="#agriHeroCarousel" data-bs-slide="next"><span class="bi bi-chevron-right" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+          </div>
+          <div class="hero-trust container"><div><i class="bi bi-shield-check"></i><span><strong>Reliable Guidance</strong><small>Practical information for farmers</small></span></div><div><i class="bi bi-flower1"></i><span><strong>Crop to Harvest</strong><small>Useful support at every stage</small></span></div><div><i class="bi bi-people"></i><span><strong>Farmer Focused</strong><small>Built around agricultural needs</small></span></div></div>
         </section>
-        <!-- end slider section -->
+        <!-- Professional hero slider end -->
 
         <!-- Second section start -->
         <section class="mt-3 ">
@@ -158,86 +136,87 @@
         </section>
         <!-- Second section End-->
 
-        <!-- third section start -->
-        <section class="mt-4 py-4 border border-primary bg-dark">
+        <!-- Featured Crops section start -->
+        <section class="featured-crops-section" id="featured-crops">
             <div class="container">
-                <h2 class="text-white mb-4 "> Our Crops</h2>
-                <div class="row g-4 ">
-                    <div class="col-md-3 ">
-                        <div class="card h-100 styl1">
-                            <img src="images/soy-941737_1280.jpg" class="card-img-top yjimg" alt="soyabean">
-                            <div class="card-body sty">
-                                <h5 class="card-title">Soybean 🌱</h5>
-                                <p class="card-text">A nutrient-rich crop known for its high protein content, essential
-                                    for food, oil, and animal feed. Thrives in diverse climates with sustainable farming
-                                    practices in the crop.</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#Soybean">
-                                    Read more
-                                </button>
+                <div class="crops-section-head">
+                    <div>
+                        <span class="section-kicker"><i class="bi bi-flower1"></i> GROW WITH CONFIDENCE</span>
+                        <h2>Explore Our <span>Popular Crops</span></h2>
+                        <p>Practical crop information, cultivation guidance and farming insights for better decisions in every season.</p>
+                    </div>
+                    <a class="all-crops-btn" href="crops.html">View All Crops <i class="bi bi-arrow-up-right"></i></a>
+                </div>
 
+                <div class="row g-4 featured-crop-grid">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="featured-crop-card">
+                            <div class="crop-image-wrap">
+                                <img src="images/soy-941737_1280.jpg" alt="Soybean crop field">
+                                <span class="crop-badge">Oilseed</span>
                             </div>
-                        </div>
+                            <div class="featured-crop-body">
+                                <div class="crop-title-row"><h3>Soybean</h3><span>🌱</span></div>
+                                <p>A protein-rich crop valued for edible oil, food products and animal feed.</p>
+                                <div class="crop-meta"><span><i class="bi bi-droplet"></i> Moderate water</span><span><i class="bi bi-sun"></i> Warm season</span></div>
+                                <a href="crops.html" class="crop-link">Explore details <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
                     </div>
-                    <div class="col-md-3 ">
-                        <div class="card h-100 styl1">
-                            <img src="images/gheu.jpg" class="card-img-top yjimg" alt="Wheat">
-                            <div class="card-body sty">
-                                <h5 class="card-title">Wheat 🌾</h5>
-                                <p class="card-text">Wheat is an important cereal crop, widely used for food, flour, and
-                                    other edible products. It grows well in diverse climates and adapts easily to
-                                    sustainable farming </p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#Wheat">
-                                    Read more
+                    <div class="col-md-6 col-lg-3">
+                        <article class="featured-crop-card">
+                            <div class="crop-image-wrap">
+                                <img src="images/gheu.jpg" alt="Wheat crop field">
+                                <span class="crop-badge">Cereal</span>
+                            </div>
+                            <div class="featured-crop-body">
+                                <div class="crop-title-row"><h3>Wheat</h3><span>🌾</span></div>
+                                <p>A major cereal crop used for flour and everyday food products across India.</p>
+                                <div class="crop-meta"><span><i class="bi bi-thermometer-half"></i> Cool season</span><span><i class="bi bi-droplet"></i> Regular care</span></div>
+                                <a href="crops.html" class="crop-link">Explore details <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="featured-crop-card">
+                            <div class="crop-image-wrap">
+                                <img src="images/turmeric2.jpeg" alt="Fresh turmeric crop">
+                                <span class="crop-badge">Spice Crop</span>
+                            </div>
+                            <div class="featured-crop-body">
+                                <div class="crop-title-row"><h3>Turmeric</h3><span>🫚</span></div>
+                                <p>A valuable spice crop known for its golden rhizomes and versatile uses.</p>
+                                <div class="crop-meta"><span><i class="bi bi-cloud-sun"></i> Humid climate</span><span><i class="bi bi-leaf"></i> High value</span></div>
+                                <a href="crops.html" class="crop-link">Explore details <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="featured-crop-card">
+                            <div class="crop-image-wrap">
+                                <img src="images/sugarcane.webp" alt="Sugarcane crop">
+                                <span class="crop-badge">Cash Crop</span>
+                            </div>
+                            <div class="featured-crop-body">
+                                <div class="crop-title-row"><h3>Sugarcane</h3><span>🌿</span></div>
+                                <p>A tall tropical crop used for sugar, juice and several useful by-products.</p>
+                                <div class="crop-meta"><span><i class="bi bi-sun"></i> Sunny climate</span><span><i class="bi bi-droplet-half"></i> More water</span></div>
+                                <a href="crops.html" class="crop-link">Explore details <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
 
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="card h-100 styl1">
-                            <img src="images/turmeric2.jpeg" class="card-img-top yjimg" alt="Turmeric">
-                            <div class="card-body sty">
-                                <h5 class="card-title">Turmeric 🫚</h5>
-                                <p class="card-text">Turmeric is a versatile and nutrient-rich crop, widely cultivated
-                                    for its bright yellow rhizomes. It is valued for its culinary uses,medicinal
-                                    properties.</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#Turmeric">
-                                    Read more
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="card h-100 styl1">
-                            <img src="images/sugarcane.webp" class="card-img-top yjimg" alt="Sugarcane">
-                            <div class="card-body sty">
-                                <h5 class="card-title">Sugarcane 🌱</h5>
-                                <p class="card-text">Sugarcane is a tall, nutrient-rich crop widely grown for sugar
-                                    production juice and bio-products It thrives in tropical and subtropical climates
-                                    and can be cultivated . </p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#Sugarcane">
-                                    Read more
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="crops-bottom-strip">
+                    <div class="strip-icon"><i class="bi bi-lightbulb"></i></div>
+                    <div><strong>Need complete crop guidance?</strong><span>Discover more crops, cultivation tips and useful agricultural information.</span></div>
+                    <a href="crops.html">Explore Crop Library <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         </section>
+        <!-- Featured Crops section end -->
 
-
-
-    </main>
-    <!-- Main section End-->
-
-    <!-- soyaben crop info -->
-    <!-- Button trigger modal -->
-    <div class="modal fade" id="Soybean" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Soybean" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-scrollable modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -573,119 +552,36 @@
 
     <!-- footer section start -->
 
-    <footer class="footer-section">
-        <div class="container ">
-            <div class="footer-cta pt-5 ">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Address📍</h4>
-                                <span>7th Floor, Office No - 704 to 707, Bramha Sky Uzuri, PCMC Building,
-                                    Pimpri, Pune - 411018. </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call Us 📞</h4>
-                                <span>+91 7498452088</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us 📩</h4>
-                                <span>agrisupport07@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content pt-5 pb-1">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="images/flogo.png" class="img-fluid" alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p> 🌾Smart Krushi Kendra empowers farmers with trusted agricultural knowledge, modern
-                                    farming guidance, and digital support to grow healthier crops and build a
-                                    sustainable agricultural future.🌱
-                                </p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span class="text-dark">Follow us</span>
-                                <ul class="social_icon">
-                                    <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i> </a></li>
-                                    <li><a href="https://x.com/"><i class="bi bi-twitter-x"></i></a></li>
-                                    <li><a href="https://www.instagram.com/accounts/login/"><i
-                                                class="bi bi-instagram"></i></i></a></li>
-                                    <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></i></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about_Us.html">About Us</a></li>
-                                <li><a href="crops.html">Crops</a></li>
-                                <li><a href="seeds.html"></a></li>
-                                <li><a href="fertilizers.html">Fertilizer</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p> To receive the latest agricultural updates, crop guidance, and information about
-                                    fertilizers and pesticides directly in your email, please enter your email address
-                                    below.Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button onclick="submitted()" id="submit">submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text text-center">
-                            <p> &copy; 2026 <b>Agri-Seva smart Krushi kendra 🌾</b> | All Right Reserved..</p>
-                            <!-- <a href="#">Soumitra Ghosh</a></p> -->
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="agri-footer">
+  <div class="container agri-footer-grid">
+    <div class="footer-about">
+      <a class="footer-logo" href="index.html"><img src="images/agri-logo.svg" alt="AgriSeva logo"><span>Agri-Seva</span></a>
+      <p>Agri-Seva Smart Krushi Kendra helps farmers explore crops, fertilizers, seeds, modern farming information and useful agricultural services.</p>
+      <div class="social-links" aria-label="Social media links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a><a href="about_Us.html">About Us</a><a href="services.html">Services</a><a href="contact_us.html">Contact Us</a>
+    </div>
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <a href="crops.html">🌾 Crops</a><a href="fertilizers.html">🧪 Fertilizers</a><a href="seeds.html">🌱 Seeds</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <p><i class="bi bi-geo-alt-fill"></i> Pimpri, Pune - 411018</p>
+      <p><i class="bi bi-telephone-fill"></i> +91 9322264354</p>
+      <p><i class="bi bi-envelope-fill"></i> agrisupport07@gmail.com</p>
+    </div>
+  </div>
+  <div class="agri-footer-bottom"><div class="container">© 2026 <strong>Agri-Seva Smart Krushi Kendra</strong>. All Rights Reserved. <span>Growing together with better farming.</span></div></div>
+</footer>
     <!-- footer section End -->
 
 
@@ -699,6 +595,8 @@
         }
 
     </script>
+<script>document.addEventListener('DOMContentLoaded',function(){const page=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.agri-navbar .nav-link').forEach(a=>{const href=a.getAttribute('href');if(href===page||(href==='crops.html'&&['crops.html','fertilizers.html','seeds.html'].includes(page)))a.classList.add('active');});});</script>
+<script src="js/site-enhancements.js"></script>
 </body>
 
 </html>

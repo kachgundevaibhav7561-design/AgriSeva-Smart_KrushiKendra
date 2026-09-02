@@ -531,3 +531,89 @@ input:hover{
 
 
 
+
+
+/* ============================================================
+   AGri-Seva Shared Look (copied into this page CSS intentionally)
+   Header and footer use the same deep-green colour family.
+   ============================================================ */
+.agri-header{
+  position:sticky;top:0;z-index:1050;
+  background:linear-gradient(135deg,#0d2b1b,#174c2e)!important;
+  box-shadow:0 4px 20px rgba(8,38,22,.22);
+}
+.agri-navbar{min-height:76px;padding:.55rem 0}
+.agri-brand{display:flex;align-items:center;gap:10px;font-size:1.35rem;font-weight:800;color:#fff!important;text-decoration:none}
+.agri-brand img{width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 2px 5px rgba(0,0,0,.18))}
+.agri-nav-list{gap:.25rem}
+.agri-navbar .nav-link{font-weight:600;color:#d9e9dc!important;border-radius:10px;padding:.58rem .78rem!important;transition:.25s}
+.agri-navbar .nav-link i{margin-right:4px}
+.agri-navbar .nav-link:hover,.agri-navbar .nav-link.active{color:#fff!important;background:rgba(143,224,160,.18)}
+.agri-navbar .navbar-toggler{border-color:rgba(255,255,255,.35);background:#fff}
+.agri-dropdown{border-radius:14px;padding:.45rem;min-width:190px;background:#fff}
+.agri-dropdown .dropdown-item{border-radius:9px;padding:.65rem .8rem;font-weight:600;color:#24432f}
+.agri-dropdown .dropdown-item span{display:inline-block;width:25px}
+.agri-dropdown .dropdown-item:hover{background:#eaf7ed;color:#176b3a}
+
+.agri-footer{background:linear-gradient(135deg,#0d2b1b,#174c2e);color:#d9e9dc;margin-top:70px}
+.agri-footer-grid{display:grid;grid-template-columns:1.5fr .75fr .75fr 1fr;gap:38px;padding:58px 12px 42px}
+.footer-logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-size:1.35rem;font-weight:800;margin-bottom:14px}
+.footer-logo img{width:56px;height:56px;object-fit:contain}
+.footer-about>p{line-height:1.75;color:#c8dbcd;max-width:430px}
+.agri-footer h4{font-size:1.05rem;color:#fff;margin:10px 0 17px;font-weight:700}
+.agri-footer a:not(.footer-logo):not(.social-links a){display:block;color:#c8dbcd;text-decoration:none;margin:9px 0;font-size:.93rem;transition:.2s}
+.agri-footer a:not(.footer-logo):not(.social-links a):hover{color:#8fe0a0;transform:translateX(3px)}
+.footer-contact p{font-size:.9rem;line-height:1.7;margin:9px 0;color:#c8dbcd}
+.footer-contact i{color:#8fe0a0;margin-right:7px}
+.social-links{display:flex;gap:10px;margin-top:18px}
+.social-links a{width:40px;height:40px;border-radius:50%;display:grid!important;place-items:center;background:rgba(255,255,255,.1);color:#fff!important;text-decoration:none;font-size:1.05rem;transition:.25s}
+.social-links a:hover{background:#5abf70;transform:translateY(-4px)}
+.agri-footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:18px 0;font-size:.85rem;color:#b8cfbe}
+.agri-footer-bottom .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Professional card sizing for content pages */
+.content-section .info-grid{align-items:stretch}
+.content-section .info-card{display:flex;flex-direction:column;border-radius:20px;height:100%}
+.content-section .info-card img{width:100%;height:220px;object-fit:cover}
+.content-section .info-card .card-body{padding:20px;display:flex;flex-direction:column;flex:1}
+.content-section .info-card h3{font-size:1.18rem;line-height:1.3}
+.content-section .info-card p{font-size:.92rem;line-height:1.65;flex:1}
+.content-section .info-card ul{margin-top:auto}
+.content-section .info-card li{padding:8px 0;border-bottom:1px solid #edf2ee}
+.content-section .info-card li:last-child{border-bottom:0}
+@media(max-width:1100px){.agri-footer-grid{grid-template-columns:1.4fr 1fr 1fr}.footer-contact{grid-column:1/-1}}
+@media(max-width:768px){.agri-footer-grid{grid-template-columns:1fr 1fr;gap:28px}.agri-navbar{padding:.4rem 0}.agri-brand img{width:46px;height:46px}.agri-footer-bottom .container{justify-content:center;text-align:center}}
+@media(max-width:540px){.agri-footer-grid{grid-template-columns:1fr;padding:45px 20px 30px}.footer-contact{grid-column:auto}.content-section .info-card img{height:230px}}
+
+
+/* ===== FINAL NAVBAR CONSISTENCY ===== */
+.agri-header{position:sticky!important;top:0;z-index:1050;background:linear-gradient(135deg,#062d1b,#0b4a2d)!important;box-shadow:0 8px 28px rgba(3,31,17,.22)}
+.agri-navbar{min-height:72px;padding:.45rem 0}
+.agri-brand{color:#fff!important;font-size:1.45rem!important;font-weight:800!important;letter-spacing:.2px;text-decoration:none}
+.agri-brand img{display:none!important}
+.agri-nav-list{gap:.35rem}
+.agri-navbar .nav-link{color:#e8f5ea!important;font-weight:600;border-radius:9px;padding:.55rem .78rem!important;transition:background .25s ease,transform .25s ease,color .25s ease}
+.agri-navbar .nav-link i{display:none!important}
+.agri-navbar .nav-link:hover,.agri-navbar .nav-link.active{color:#fff!important;background:rgba(132,213,143,.18);transform:translateY(-1px)}
+.agri-dropdown{border-radius:14px!important;padding:.55rem!important;background:#fff!important;overflow:hidden}
+.agri-dropdown .dropdown-item{border-radius:9px;padding:.65rem .8rem;color:#16452b!important}
+.agri-dropdown .dropdown-item:hover{background:#edf8ee!important}
+.navbar-toggler{border-color:rgba(255,255,255,.45)!important;background:#fff!important}
+
+
+/* ===== MODERN CONTACT PAGE ===== */
+.contact-modern{background:#f7faf7}.contact-hero{height:370px;position:relative;overflow:hidden}.contact-hero>img{width:100%;height:100%;object-fit:cover}.contact-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,44,24,.92),rgba(6,72,35,.55),rgba(0,0,0,.15))}.contact-hero-content{position:absolute;inset:0;display:flex;justify-content:center;flex-direction:column;color:#fff}.contact-hero-content span{font-size:.75rem;font-weight:800;letter-spacing:1.4px;color:#a6db88}.contact-hero-content h1{font-size:clamp(2.5rem,5vw,4.4rem);font-weight:800;margin:10px 0}.contact-hero-content p{max-width:620px;line-height:1.8;color:#e6f2e8}.contact-intro{margin-top:-55px;position:relative;z-index:2}.contact-intro-card{background:#fff;border-radius:20px;padding:28px 34px;box-shadow:0 18px 42px rgba(13,63,31,.14);display:flex;justify-content:space-between;gap:30px;align-items:center}.contact-intro-card h2,.contact-details h2,.modern-contact-form h2{font-size:1.7rem;font-weight:800;margin:9px 0 10px;color:#183c26}.contact-intro-card p{margin:0;color:#617067;max-width:700px}.contact-mini-stats{display:flex;gap:12px}.contact-mini-stats span{background:#edf7ef;border-radius:12px;padding:13px;min-width:120px;display:flex;align-items:center;gap:8px;color:#1d6937;font-size:.78rem}.contact-mini-stats i{font-size:1.15rem}.contact-details,.modern-contact-form{background:#fff;border:1px solid #e1ece3;border-radius:18px;padding:30px;box-shadow:0 10px 30px rgba(13,63,31,.06)}.detail-item{display:flex;gap:13px;align-items:center;padding:15px 0;border-bottom:1px solid #edf1ee}.detail-item:last-of-type{border-bottom:0}.detail-item>i{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#e8f5ea;color:#17733a}.detail-item strong,.detail-item span{display:block}.detail-item strong{color:#274532;font-size:.92rem}.detail-item span{color:#718075;font-size:.84rem;margin-top:3px}.contact-social{display:flex;gap:9px;margin-top:22px}.contact-social a{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:#0f6232;color:#fff;text-decoration:none}.modern-contact-form label{font-size:.83rem;font-weight:700;color:#3c5343;margin-bottom:6px}.modern-contact-form input,.modern-contact-form textarea{width:100%;border:1px solid #dbe6dd;border-radius:10px;padding:12px 13px;outline:none;transition:.2s;background:#fbfdfb}.modern-contact-form input:focus,.modern-contact-form textarea:focus{border-color:#2f8d4a;box-shadow:0 0 0 3px rgba(47,141,74,.12)}.modern-contact-form textarea{height:135px;resize:vertical}.send-btn{width:100%;border:0;background:linear-gradient(135deg,#17733a,#23944b);color:#fff;border-radius:10px;padding:13px;font-weight:750}.send-btn:hover{filter:brightness(.95)}.form-status{color:#16813d;font-size:.86rem;margin:10px 0 0}.contact-side-image{height:100%;min-height:420px;border-radius:18px;overflow:hidden;position:relative;background:#163}.contact-side-image img{width:100%;height:100%;object-fit:cover}.contact-side-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,35,18,.78),rgba(0,0,0,.02))}.contact-side-image>div{position:absolute;z-index:2;bottom:0;padding:24px;color:#fff}.contact-side-image i{font-size:1.7rem;color:#a9e184}.contact-side-image h3{font-size:1.25rem;font-weight:800;margin:8px 0}.contact-side-image p{font-size:.88rem;margin:0;color:#e5f1e7}.map-card{height:360px;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(13,63,31,.09);border:1px solid #e2ece3}.map-card iframe{width:100%;height:100%;border:0}.floating-whatsapp{position:fixed;right:24px;bottom:24px;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:1.7rem;box-shadow:0 12px 28px rgba(0,0,0,.24);z-index:1000;text-decoration:none}@media(max-width:768px){.contact-hero{height:430px}.contact-hero-content{padding:25px}.contact-intro{margin-top:-25px}.contact-intro-card{margin:0 12px;flex-direction:column;align-items:flex-start;padding:24px}.contact-mini-stats{width:100%;flex-direction:column}.contact-mini-stats span{width:100%}.contact-side-image{min-height:300px}.contact-details,.modern-contact-form{padding:24px}}
+
+
+/* ===== FINAL PROFESSIONAL UI ENHANCEMENT ===== */
+:root{--agri-dark:#063d25;--agri-deep:#07512f;--agri:#138a4a;--agri-light:#eaf7ee;--agri-gold:#dca43b;--ink:#183027;--muted:#62736a;--surface:#ffffff;--shadow:0 14px 40px rgba(9,70,40,.10);}
+html{scroll-behavior:smooth} body{background:#f7faf8;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}.agri-header,header{background:linear-gradient(100deg,var(--agri-dark),var(--agri-deep))!important;box-shadow:0 4px 18px rgba(0,0,0,.13)}.agri-navbar{min-height:70px}.agri-brand,.navbar-brand{color:#fff!important;font-size:1.45rem!important;font-weight:800!important;letter-spacing:.2px}.agri-nav-list .nav-link,.agri-navbar .nav-link{color:rgba(255,255,255,.9)!important;font-weight:650!important;padding:.6rem .9rem!important;border-radius:10px;transition:.25s ease}.agri-nav-list .nav-link:hover,.agri-navbar .nav-link:hover,.agri-navbar .nav-link.active{color:#fff!important;background:rgba(255,255,255,.13);transform:translateY(-1px)}.navbar-toggler{border-color:rgba(255,255,255,.55)!important}.navbar-toggler-icon{filter:invert(1)}.agri-dropdown{border-radius:14px!important;padding:.5rem!important}.agri-dropdown .dropdown-item{border-radius:9px;padding:.65rem .8rem}.agri-dropdown .dropdown-item:hover{background:var(--agri-light);color:var(--agri-deep)}
+section{position:relative}.btn,.hero-btn,.vision-btn{border-radius:10px!important;font-weight:700;transition:transform .25s ease,box-shadow .25s ease}.btn:hover,.hero-btn:hover,.vision-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(8,85,43,.18)}.card,.service-card,.crop-card,.info-card,.value-card{border:1px solid rgba(13,92,49,.09);border-radius:18px!important;background:#fff;box-shadow:0 8px 28px rgba(16,68,41,.07);transition:transform .3s ease,box-shadow .3s ease}.card:hover,.service-card:hover,.crop-card:hover,.info-card:hover,.value-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}img{max-width:100%}.crop-card img,.info-card img,.service-card img,.card img{transition:transform .55s ease}.crop-card:hover img,.info-card:hover img,.service-card:hover img,.card:hover img{transform:scale(1.045)}
+.agri-footer{background:linear-gradient(125deg,#042f1d,#07512f)!important;color:#eaf5ee!important;margin-top:3rem}.agri-footer a{color:#d9eee0!important;text-decoration:none}.agri-footer a:hover{color:#9ce2b2!important}.agri-footer-bottom{background:rgba(0,0,0,.16)!important;border-top:1px solid rgba(255,255,255,.08)}.footer-logo img{display:none!important}.footer-logo span{font-size:1.35rem;font-weight:800}.social-links a{width:38px;height:38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.10);transition:.25s}.social-links a:hover{background:var(--agri);transform:translateY(-3px)}
+.reveal-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}.reveal-on-scroll.is-visible{opacity:1;transform:none}
+@media(max-width:991px){.agri-navbar{padding:.55rem 0}.agri-nav-list{padding:1rem 0}.agri-nav-list .nav-link{margin:.2rem 0}.agri-footer-grid{gap:2rem}}@media(max-width:576px){h1{font-size:2rem!important}h2{font-size:1.55rem!important}.hero-caption{padding:1.25rem!important}.agri-brand,.navbar-brand{font-size:1.25rem!important}}
+
+.contact-modern input,.contact-modern textarea,.contact-form input,.contact-form textarea{border:1px solid #dbe9df!important;border-radius:10px!important;padding:.8rem!important;box-shadow:none!important}.contact-modern input:focus,.contact-modern textarea:focus,.contact-form input:focus,.contact-form textarea:focus{border-color:#138a4a!important;box-shadow:0 0 0 .2rem rgba(19,138,74,.12)!important}.contact-card,.contact-info-card{border-radius:18px;box-shadow:var(--shadow)}
+
+/* ===== FINAL AGRISEVA LOGO & CONTACT UPDATE ===== */
+.agri-brand{display:flex!important;align-items:center;gap:10px!important}.agri-brand img{display:block!important;width:46px!important;height:46px!important;object-fit:contain!important;filter:drop-shadow(0 2px 8px rgba(0,0,0,.22))!important}.agri-brand span{line-height:1!important;white-space:nowrap}.footer-logo{display:flex!important;align-items:center;gap:11px!important}.footer-logo img{display:block!important;width:58px!important;height:58px!important;object-fit:contain!important;background:#fff;border-radius:50%;padding:3px;box-shadow:0 6px 18px rgba(0,0,0,.22)}.footer-logo span{font-size:1.45rem!important;font-weight:800!important;color:#fff!important}.footer-contact p:nth-of-type(2)::selection{background:#8fe0a0;color:#063d25}@media(max-width:576px){.agri-brand img{width:40px!important;height:40px!important}.footer-logo img{width:52px!important;height:52px!important}}

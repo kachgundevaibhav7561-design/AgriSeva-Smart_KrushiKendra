@@ -1,0 +1,19 @@
+/* Deprecated: header/footer styles are intentionally included in each page-specific CSS file. */
+
+
+/* ===== FINAL NAVBAR CONSISTENCY ===== */
+.agri-header{position:sticky!important;top:0;z-index:1050;background:linear-gradient(135deg,#062d1b,#0b4a2d)!important;box-shadow:0 8px 28px rgba(3,31,17,.22)}
+.agri-navbar{min-height:72px;padding:.45rem 0}
+.agri-brand{color:#fff!important;font-size:1.45rem!important;font-weight:800!important;letter-spacing:.2px;text-decoration:none}
+.agri-brand img{display:none!important}
+.agri-nav-list{gap:.35rem}
+.agri-navbar .nav-link{color:#e8f5ea!important;font-weight:600;border-radius:9px;padding:.55rem .78rem!important;transition:background .25s ease,transform .25s ease,color .25s ease}
+.agri-navbar .nav-link i{display:none!important}
+.agri-navbar .nav-link:hover,.agri-navbar .nav-link.active{color:#fff!important;background:rgba(132,213,143,.18);transform:translateY(-1px)}
+.agri-dropdown{border-radius:14px!important;padding:.55rem!important;background:#fff!important;overflow:hidden}
+.agri-dropdown .dropdown-item{border-radius:9px;padding:.65rem .8rem;color:#16452b!important}
+.agri-dropdown .dropdown-item:hover{background:#edf8ee!important}
+.navbar-toggler{border-color:rgba(255,255,255,.45)!important;background:#fff!important}
+
+/* ===== FINAL AGRISEVA LOGO & CONTACT UPDATE ===== */
+.agri-brand{display:flex!important;align-items:center;gap:10px!important}.agri-brand img{display:block!important;width:46px!important;height:46px!important;object-fit:contain!important;filter:drop-shadow(0 2px 8px rgba(0,0,0,.22))!important}.agri-brand span{line-height:1!important;white-space:nowrap}.footer-logo{display:flex!important;align-items:center;gap:11px!important}.footer-logo img{display:block!important;width:58px!important;height:58px!important;object-fit:contain!important;background:#fff;border-radius:50%;padding:3px;box-shadow:0 6px 18px rgba(0,0,0,.22)}.footer-logo span{font-size:1.45rem!important;font-weight:800!important;color:#fff!important}.footer-contact p:nth-of-type(2)::selection{background:#8fe0a0;color:#063d25}@media(max-width:576px){.agri-brand img{width:40px!important;height:40px!important}.footer-logo img{width:52px!important;height:52px!important}}

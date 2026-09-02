@@ -433,3 +433,127 @@ header {
 }
 
 /* footer section end */
+
+/* ============================================================
+   AGri-Seva Shared Look (copied into this page CSS intentionally)
+   Header and footer use the same deep-green colour family.
+   ============================================================ */
+.agri-header{
+  position:sticky;top:0;z-index:1050;
+  background:linear-gradient(135deg,#0d2b1b,#174c2e)!important;
+  box-shadow:0 4px 20px rgba(8,38,22,.22);
+}
+.agri-navbar{min-height:76px;padding:.55rem 0}
+.agri-brand{display:flex;align-items:center;gap:10px;font-size:1.35rem;font-weight:800;color:#fff!important;text-decoration:none}
+.agri-brand img{width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 2px 5px rgba(0,0,0,.18))}
+.agri-nav-list{gap:.25rem}
+.agri-navbar .nav-link{font-weight:600;color:#d9e9dc!important;border-radius:10px;padding:.58rem .78rem!important;transition:.25s}
+.agri-navbar .nav-link i{margin-right:4px}
+.agri-navbar .nav-link:hover,.agri-navbar .nav-link.active{color:#fff!important;background:rgba(143,224,160,.18)}
+.agri-navbar .navbar-toggler{border-color:rgba(255,255,255,.35);background:#fff}
+.agri-dropdown{border-radius:14px;padding:.45rem;min-width:190px;background:#fff}
+.agri-dropdown .dropdown-item{border-radius:9px;padding:.65rem .8rem;font-weight:600;color:#24432f}
+.agri-dropdown .dropdown-item span{display:inline-block;width:25px}
+.agri-dropdown .dropdown-item:hover{background:#eaf7ed;color:#176b3a}
+
+.agri-footer{background:linear-gradient(135deg,#0d2b1b,#174c2e);color:#d9e9dc;margin-top:70px}
+.agri-footer-grid{display:grid;grid-template-columns:1.5fr .75fr .75fr 1fr;gap:38px;padding:58px 12px 42px}
+.footer-logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-size:1.35rem;font-weight:800;margin-bottom:14px}
+.footer-logo img{width:56px;height:56px;object-fit:contain}
+.footer-about>p{line-height:1.75;color:#c8dbcd;max-width:430px}
+.agri-footer h4{font-size:1.05rem;color:#fff;margin:10px 0 17px;font-weight:700}
+.agri-footer a:not(.footer-logo):not(.social-links a){display:block;color:#c8dbcd;text-decoration:none;margin:9px 0;font-size:.93rem;transition:.2s}
+.agri-footer a:not(.footer-logo):not(.social-links a):hover{color:#8fe0a0;transform:translateX(3px)}
+.footer-contact p{font-size:.9rem;line-height:1.7;margin:9px 0;color:#c8dbcd}
+.footer-contact i{color:#8fe0a0;margin-right:7px}
+.social-links{display:flex;gap:10px;margin-top:18px}
+.social-links a{width:40px;height:40px;border-radius:50%;display:grid!important;place-items:center;background:rgba(255,255,255,.1);color:#fff!important;text-decoration:none;font-size:1.05rem;transition:.25s}
+.social-links a:hover{background:#5abf70;transform:translateY(-4px)}
+.agri-footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:18px 0;font-size:.85rem;color:#b8cfbe}
+.agri-footer-bottom .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Professional card sizing for content pages */
+.content-section .info-grid{align-items:stretch}
+.content-section .info-card{display:flex;flex-direction:column;border-radius:20px;height:100%}
+.content-section .info-card img{width:100%;height:220px;object-fit:cover}
+.content-section .info-card .card-body{padding:20px;display:flex;flex-direction:column;flex:1}
+.content-section .info-card h3{font-size:1.18rem;line-height:1.3}
+.content-section .info-card p{font-size:.92rem;line-height:1.65;flex:1}
+.content-section .info-card ul{margin-top:auto}
+.content-section .info-card li{padding:8px 0;border-bottom:1px solid #edf2ee}
+.content-section .info-card li:last-child{border-bottom:0}
+@media(max-width:1100px){.agri-footer-grid{grid-template-columns:1.4fr 1fr 1fr}.footer-contact{grid-column:1/-1}}
+@media(max-width:768px){.agri-footer-grid{grid-template-columns:1fr 1fr;gap:28px}.agri-navbar{padding:.4rem 0}.agri-brand img{width:46px;height:46px}.agri-footer-bottom .container{justify-content:center;text-align:center}}
+@media(max-width:540px){.agri-footer-grid{grid-template-columns:1fr;padding:45px 20px 30px}.footer-contact{grid-column:auto}.content-section .info-card img{height:230px}}
+
+
+/* ===== FINAL NAVBAR CONSISTENCY ===== */
+.agri-header{position:sticky!important;top:0;z-index:1050;background:linear-gradient(135deg,#062d1b,#0b4a2d)!important;box-shadow:0 8px 28px rgba(3,31,17,.22)}
+.agri-navbar{min-height:72px;padding:.45rem 0}
+.agri-brand{color:#fff!important;font-size:1.45rem!important;font-weight:800!important;letter-spacing:.2px;text-decoration:none}
+.agri-brand img{display:none!important}
+.agri-nav-list{gap:.35rem}
+.agri-navbar .nav-link{color:#e8f5ea!important;font-weight:600;border-radius:9px;padding:.55rem .78rem!important;transition:background .25s ease,transform .25s ease,color .25s ease}
+.agri-navbar .nav-link i{display:none!important}
+.agri-navbar .nav-link:hover,.agri-navbar .nav-link.active{color:#fff!important;background:rgba(132,213,143,.18);transform:translateY(-1px)}
+.agri-dropdown{border-radius:14px!important;padding:.55rem!important;background:#fff!important;overflow:hidden}
+.agri-dropdown .dropdown-item{border-radius:9px;padding:.65rem .8rem;color:#16452b!important}
+.agri-dropdown .dropdown-item:hover{background:#edf8ee!important}
+.navbar-toggler{border-color:rgba(255,255,255,.45)!important;background:#fff!important}
+
+
+/* ===== PROFESSIONAL HOME SLIDER ===== */
+.home-hero{background:#f5faf6;padding-bottom:34px}.home-hero .carousel{height:min(610px,72vh);min-height:480px;overflow:hidden}.home-hero .carousel-item{height:min(610px,72vh);min-height:480px;position:relative}.home-hero .carousel-item>img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,28,16,.88) 0%,rgba(6,42,24,.62) 46%,rgba(0,0,0,.12) 100%)}.hero-caption-wrap{position:absolute;inset:0;display:flex;align-items:center}.hero-caption{max-width:690px;color:#fff;padding-bottom:20px;animation:heroIn .8s ease both}.hero-kicker{display:inline-block;padding:9px 14px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);backdrop-filter:blur(8px);border-radius:30px;font-size:.73rem;font-weight:800;letter-spacing:1.3px;margin-bottom:20px}.hero-caption h1{font-size:clamp(2.4rem,5vw,4.8rem);line-height:1.08;font-weight:750;margin:0 0 18px}.hero-caption h1 strong{color:#9cdd7c}.hero-caption p{font-size:1.08rem;line-height:1.75;max-width:620px;color:#e7f2e8;margin-bottom:26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:750;transition:.25s}.hero-btn.primary{background:#2e9b52;color:#fff;box-shadow:0 12px 24px rgba(0,0,0,.2)}.hero-btn.primary:hover{background:#238043;color:#fff;transform:translateY(-2px)}.hero-btn.outline{border:1px solid rgba(255,255,255,.7);color:#fff}.hero-btn.outline:hover{background:#fff;color:#124526}.hero-control{width:54px!important;height:54px!important;top:50%!important;transform:translateY(-50%);background:#fff!important;color:#15522f!important;border-radius:50%;opacity:1!important;margin:0 32px!important;font-size:1.35rem}.hero-control:hover{background:#dff3e2!important}.hero-indicators{margin-bottom:30px!important;justify-content:flex-start!important;left:8%!important;right:auto!important;gap:8px}.hero-indicators [data-bs-target]{width:9px!important;height:9px!important;border-radius:50%!important;border:0!important;margin:0!important;opacity:.7!important}.hero-trust{margin-top:-1px;background:#fff;box-shadow:0 14px 38px rgba(16,69,38,.11);border-radius:0 0 18px 18px;display:grid;grid-template-columns:repeat(3,1fr);padding:22px 28px;position:relative;z-index:2}.hero-trust>div{display:flex;align-items:center;gap:13px;padding:0 22px;border-right:1px solid #e5eee6}.hero-trust>div:last-child{border-right:0}.hero-trust i{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#e9f6eb;color:#1c7b3d;font-size:1.2rem}.hero-trust strong,.hero-trust small{display:block}.hero-trust strong{color:#173b25;font-size:.95rem}.hero-trust small{color:#6d7c72;font-size:.78rem;margin-top:3px}@keyframes heroIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}@media(max-width:768px){.home-hero .carousel,.home-hero .carousel-item{height:560px;min-height:560px}.hero-caption{padding:20px 24px}.hero-control{display:none!important}.hero-trust{grid-template-columns:1fr;margin:0 12px;border-radius:14px;padding:10px}.hero-trust>div{border-right:0;border-bottom:1px solid #e7eee8;padding:13px 8px}.hero-trust>div:last-child{border-bottom:0}.hero-indicators{left:50%!important;transform:translateX(-50%);justify-content:center!important}.hero-caption p{font-size:.98rem}}
+
+
+/* ===== FINAL PROFESSIONAL UI ENHANCEMENT ===== */
+:root{--agri-dark:#063d25;--agri-deep:#07512f;--agri:#138a4a;--agri-light:#eaf7ee;--agri-gold:#dca43b;--ink:#183027;--muted:#62736a;--surface:#ffffff;--shadow:0 14px 40px rgba(9,70,40,.10);}
+html{scroll-behavior:smooth} body{background:#f7faf8;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}.agri-header,header{background:linear-gradient(100deg,var(--agri-dark),var(--agri-deep))!important;box-shadow:0 4px 18px rgba(0,0,0,.13)}.agri-navbar{min-height:70px}.agri-brand,.navbar-brand{color:#fff!important;font-size:1.45rem!important;font-weight:800!important;letter-spacing:.2px}.agri-nav-list .nav-link,.agri-navbar .nav-link{color:rgba(255,255,255,.9)!important;font-weight:650!important;padding:.6rem .9rem!important;border-radius:10px;transition:.25s ease}.agri-nav-list .nav-link:hover,.agri-navbar .nav-link:hover,.agri-navbar .nav-link.active{color:#fff!important;background:rgba(255,255,255,.13);transform:translateY(-1px)}.navbar-toggler{border-color:rgba(255,255,255,.55)!important}.navbar-toggler-icon{filter:invert(1)}.agri-dropdown{border-radius:14px!important;padding:.5rem!important}.agri-dropdown .dropdown-item{border-radius:9px;padding:.65rem .8rem}.agri-dropdown .dropdown-item:hover{background:var(--agri-light);color:var(--agri-deep)}
+section{position:relative}.btn,.hero-btn,.vision-btn{border-radius:10px!important;font-weight:700;transition:transform .25s ease,box-shadow .25s ease}.btn:hover,.hero-btn:hover,.vision-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(8,85,43,.18)}.card,.service-card,.crop-card,.info-card,.value-card{border:1px solid rgba(13,92,49,.09);border-radius:18px!important;background:#fff;box-shadow:0 8px 28px rgba(16,68,41,.07);transition:transform .3s ease,box-shadow .3s ease}.card:hover,.service-card:hover,.crop-card:hover,.info-card:hover,.value-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}img{max-width:100%}.crop-card img,.info-card img,.service-card img,.card img{transition:transform .55s ease}.crop-card:hover img,.info-card:hover img,.service-card:hover img,.card:hover img{transform:scale(1.045)}
+.agri-footer{background:linear-gradient(125deg,#042f1d,#07512f)!important;color:#eaf5ee!important;margin-top:3rem}.agri-footer a{color:#d9eee0!important;text-decoration:none}.agri-footer a:hover{color:#9ce2b2!important}.agri-footer-bottom{background:rgba(0,0,0,.16)!important;border-top:1px solid rgba(255,255,255,.08)}.footer-logo img{display:none!important}.footer-logo span{font-size:1.35rem;font-weight:800}.social-links a{width:38px;height:38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.10);transition:.25s}.social-links a:hover{background:var(--agri);transform:translateY(-3px)}
+.reveal-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}.reveal-on-scroll.is-visible{opacity:1;transform:none}
+@media(max-width:991px){.agri-navbar{padding:.55rem 0}.agri-nav-list{padding:1rem 0}.agri-nav-list .nav-link{margin:.2rem 0}.agri-footer-grid{gap:2rem}}@media(max-width:576px){h1{font-size:2rem!important}h2{font-size:1.55rem!important}.hero-caption{padding:1.25rem!important}.agri-brand,.navbar-brand{font-size:1.25rem!important}}
+
+/* Enhanced home slider */
+.home-hero .carousel-item{height:min(78vh,680px);min-height:500px}.home-hero .carousel-item>img{width:100%;height:100%;object-fit:cover;animation:heroZoom 8s ease both}.hero-overlay{background:linear-gradient(90deg,rgba(2,31,18,.82),rgba(4,50,28,.42),rgba(0,0,0,.10))!important}.hero-caption h1{font-weight:800;letter-spacing:-.5px;text-shadow:0 3px 18px rgba(0,0,0,.25)}.hero-caption strong{color:#9de3a5}.hero-btn.primary{background:linear-gradient(135deg,#1a9b50,#08713a)!important;border:none}.hero-indicators button{width:9px!important;height:9px!important;border-radius:50%!important}@keyframes heroZoom{from{transform:scale(1.06)}to{transform:scale(1)}}@media(max-width:768px){.home-hero .carousel-item{min-height:540px;height:72vh}.hero-actions{gap:.75rem!important;flex-wrap:wrap}}
+
+/* ===== FINAL AGRISEVA LOGO & CONTACT UPDATE ===== */
+.agri-brand{display:flex!important;align-items:center;gap:10px!important}.agri-brand img{display:block!important;width:46px!important;height:46px!important;object-fit:contain!important;filter:drop-shadow(0 2px 8px rgba(0,0,0,.22))!important}.agri-brand span{line-height:1!important;white-space:nowrap}.footer-logo{display:flex!important;align-items:center;gap:11px!important}.footer-logo img{display:block!important;width:58px!important;height:58px!important;object-fit:contain!important;background:#fff;border-radius:50%;padding:3px;box-shadow:0 6px 18px rgba(0,0,0,.22)}.footer-logo span{font-size:1.45rem!important;font-weight:800!important;color:#fff!important}.footer-contact p:nth-of-type(2)::selection{background:#8fe0a0;color:#063d25}@media(max-width:576px){.agri-brand img{width:40px!important;height:40px!important}.footer-logo img{width:52px!important;height:52px!important}}
+
+
+/* ===================== FEATURED CROPS - HOME PAGE ===================== */
+.featured-crops-section{
+    padding:88px 0 76px;
+    background:linear-gradient(180deg,#f7fbf7 0%,#ffffff 55%,#f3f8f3 100%);
+    overflow:hidden;
+}
+.crops-section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:38px;}
+.section-kicker{display:inline-flex;align-items:center;gap:8px;color:#168243;background:#e9f7ee;border:1px solid #d5efde;padding:8px 13px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.11em;}
+.crops-section-head h2{margin:14px 0 10px;color:#153d27;font-size:clamp(2rem,3.2vw,3rem);font-weight:800;letter-spacing:-.04em;}
+.crops-section-head h2 span{color:#2b9b54;}
+.crops-section-head p{max-width:680px;margin:0;color:#66776d;font-size:1rem;line-height:1.7;}
+.all-crops-btn{white-space:nowrap;display:inline-flex;align-items:center;gap:9px;padding:13px 19px;border-radius:12px;background:#0d5c31;color:#fff!important;text-decoration:none;font-weight:700;box-shadow:0 12px 25px rgba(13,92,49,.18);transition:.25s ease;}
+.all-crops-btn:hover{background:#0a4927;transform:translateY(-3px);box-shadow:0 16px 30px rgba(13,92,49,.25);}
+.featured-crop-card{height:100%;background:#fff;border:1px solid #e5eee7;border-radius:22px;overflow:hidden;box-shadow:0 10px 28px rgba(21,61,39,.07);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;}
+.featured-crop-card:hover{transform:translateY(-9px);border-color:#b7ddc1;box-shadow:0 20px 45px rgba(21,61,39,.14);}
+.crop-image-wrap{height:205px;position:relative;overflow:hidden;background:#dfeee2;}
+.crop-image-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(4,45,22,.34));pointer-events:none;}
+.crop-image-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;}
+.featured-crop-card:hover .crop-image-wrap img{transform:scale(1.09);}
+.crop-badge{position:absolute;z-index:2;top:14px;left:14px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);color:#155d31;font-size:.72rem;font-weight:800;}
+.featured-crop-body{padding:21px 20px 20px;}
+.crop-title-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.crop-title-row h3{font-size:1.27rem;margin:0;color:#163f29;font-weight:800;}
+.crop-title-row span{font-size:1.3rem;background:#eff8f1;width:40px;height:40px;display:grid;place-items:center;border-radius:12px;}
+.featured-crop-body p{color:#65766c;font-size:.91rem;line-height:1.65;margin:0 0 16px;min-height:72px;}
+.crop-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.crop-meta span{font-size:.72rem;color:#4c6557;background:#f3f8f4;border-radius:8px;padding:7px 8px;}
+.crop-meta i{color:#26964f;margin-right:3px;}
+.crop-link{display:inline-flex;align-items:center;gap:8px;color:#13753b;text-decoration:none;font-size:.86rem;font-weight:800;}
+.crop-link i{transition:transform .25s ease;}.crop-link:hover i{transform:translateX(5px);}
+.crops-bottom-strip{margin-top:34px;border-radius:18px;padding:18px 22px;background:linear-gradient(105deg,#0d5c31,#167542);color:#fff;display:flex;align-items:center;gap:16px;box-shadow:0 16px 32px rgba(13,92,49,.18);}
+.strip-icon{width:46px;height:46px;flex:0 0 46px;border-radius:14px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:1.2rem;}
+.crops-bottom-strip div:nth-child(2){display:flex;flex-direction:column;gap:3px;flex:1;}.crops-bottom-strip strong{font-size:1rem;}.crops-bottom-strip span{font-size:.86rem;color:rgba(255,255,255,.78);}
+.crops-bottom-strip>a{color:#fff!important;text-decoration:none;white-space:nowrap;font-weight:800;font-size:.88rem;padding:10px 13px;background:rgba(255,255,255,.13);border-radius:10px;transition:.2s ease;}.crops-bottom-strip>a:hover{background:rgba(255,255,255,.23);}
+@media(max-width:991px){.crops-section-head{align-items:flex-start;flex-direction:column;}.featured-crops-section{padding:70px 0 60px;}.crops-section-head{margin-bottom:30px;}.crops-bottom-strip{align-items:flex-start;flex-wrap:wrap;}.crops-bottom-strip>a{margin-left:62px;}}
+@media(max-width:575px){.featured-crops-section{padding:58px 0 50px;}.crop-image-wrap{height:210px;}.featured-crop-body p{min-height:auto;}.crops-bottom-strip{padding:18px;}.crops-bottom-strip>a{margin-left:0;width:100%;text-align:center;justify-content:center;}.crops-section-head h2{font-size:2rem;}}
